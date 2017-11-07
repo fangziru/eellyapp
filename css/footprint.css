@@ -1,0 +1,381 @@
+body {
+  background: #f0eff5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.main {
+  overflow-y: scroll;
+  flex: 1; }
+
+.header {
+  width: 100%;
+  height: 0.43rem;
+  display: flex;
+  padding: 0 0.21rem 0 0.1rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #f6f6f8; }
+  .header span {
+    font-weight: bold;
+    color: #000002; }
+  .header a i {
+    font-size: 20px;
+    color: #98989a; }
+
+.nav {
+  height: 0.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-image: url("../img/bg9.png");
+  background-size: 0.01rem 0.6rem;
+  overflow: auto;
+  vertical-align: middle; }
+  .nav a {
+    width: 0.75rem;
+    height: 0.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    flex-shrink: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .nav .active {
+    background-image: url("../img/bg10.png");
+    background-size: 0.01rem 0.6rem; }
+
+.nav::-webkit-scrollbar {
+  display: none; }
+
+section {
+  width: 100%; }
+  section .swiper-container {
+    height: 100%; }
+  section .swiper-wrapper {
+    height: auto; }
+  section .swiper-slide {
+    width: 100%;
+    height: auto; }
+    section .swiper-slide .edit {
+      height: 0.7rem;
+      background: #FFFFFF;
+      padding: 0.135rem 0.14rem 0.115rem;
+      box-sizing: border-box; }
+      section .swiper-slide .edit h4 {
+        font-weight: normal;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #363636;
+        line-height: 0.23rem; }
+        section .swiper-slide .edit h4 span:last-child {
+          color: #e5426d; }
+          section .swiper-slide .edit h4 span:last-child i {
+            font-size: 14px;
+            margin-left: 0.04rem; }
+      section .swiper-slide .edit p {
+        color: #8a8a8a;
+        line-height: 0.215rem;
+        font-size: 12px; }
+    section .swiper-slide .personal_store {
+      margin-top: 0.1rem;
+      background: #FFFFFF;
+      border-top: 1px solid #c8c7cc;
+      border-bottom: 1px solid #c8c7cc; }
+      section .swiper-slide .personal_store .business_con {
+        width: 100%;
+        padding: 0.13rem 0.115rem 0;
+        box-sizing: border-box;
+        position: relative; }
+        section .swiper-slide .personal_store .business_con .business_store {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: flex-start; }
+          section .swiper-slide .personal_store .business_con .business_store .bus_img {
+            position: relative;
+            width: 0.38rem;
+            height: 0.38rem;
+            margin: 0.02rem; }
+            section .swiper-slide .personal_store .business_con .business_store .bus_img img {
+              width: 100%;
+              height: 100%; }
+            section .swiper-slide .personal_store .business_con .business_store .bus_img span {
+              position: absolute;
+              display: block;
+              width: 0.28rem;
+              height: 0.1rem;
+              text-align: center;
+              font-size: 8px;
+              line-height: 0.1rem;
+              background: #f2e2e5;
+              border: 1px solid #c74b6f;
+              bottom: -0.03rem;
+              left: 0.04rem;
+              overflow: hidden; }
+          section .swiper-slide .personal_store .business_con .business_store .bus_store_msg {
+            padding-left: 0.08rem;
+            flex: 1; }
+            section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_name {
+              height: 0.24rem;
+              display: flex;
+              justify-content: space-between;
+              line-height: 0.24rem; }
+              section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_name h4 {
+                font-size: 14px;
+                color: #222222;
+                font-weight: normal; }
+                section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_name h4 span {
+                  margin-left: 0.11rem;
+                  font-size: 10px;
+                  color: #989898; }
+              section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_name .liuyan {
+                display: block;
+                width: 0.45rem;
+                height: 0.2rem;
+                line-height: 0.2rem;
+                font-size: 14px;
+                color: #ea4168;
+                border: 1px solid #ea4168;
+                border-radius: 0.1rem;
+                margin-right: 0.03rem;
+                text-align: center; }
+            section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_ify {
+              display: flex;
+              justify-content: flex-start;
+              flex-wrap: nowrap; }
+              section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_ify span {
+                display: inline-block;
+                width: 0.65rem;
+                height: 0.18rem;
+                text-align: center;
+                line-height: 0.18rem;
+                border: 1px solid;
+                font-size: 10px;
+                border-radius: 0.02rem;
+                overflow: hidden; }
+                section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_ify span i {
+                  font-size: 10px;
+                  margin-right: 0.03rem; }
+              section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_ify span:nth-child(1) {
+                color: #09ab21;
+                border-color: #09ab21; }
+              section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_ify span:nth-child(2) {
+                color: #989898;
+                border-color: #989898;
+                margin: 0 0.1rem; }
+              section .swiper-slide .personal_store .business_con .business_store .bus_store_msg .store_ify span:nth-child(3) {
+                color: #09ab21;
+                border-color: #09ab21; }
+        section .swiper-slide .personal_store .business_con .comment {
+          width: 100%;
+          height: 0.34rem;
+          margin: 0.14rem 0 0.15rem;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          line-height: 0.34rem;
+          text-align: center;
+          font-size: 12px;
+          box-sizing: border-box; }
+          section .swiper-slide .personal_store .business_con .comment .comment_person {
+            width: 0.75rem;
+            background: #fab0c1;
+            border-radius: 0.03rem;
+            margin-right: 0.01rem;
+            color: #FFFFFF; }
+          section .swiper-slide .personal_store .business_con .comment .satisfaction_deg {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            background: #f2f2f2;
+            border-radius: 0.06rem;
+            position: relative;
+            color: #9e9e9e; }
+            section .swiper-slide .personal_store .business_con .comment .satisfaction_deg span {
+              padding: 0 0.04rem; }
+            section .swiper-slide .personal_store .business_con .comment .satisfaction_deg .satisfaction {
+              width: 0.47rem;
+              height: 0.44rem;
+              background-image: url(../img/business_circle_evaluation_bg.png);
+              background-size: 0.47rem 0.44rem;
+              background-repeat: no-repeat;
+              position: relative;
+              top: -0.05rem;
+              color: #FFFFFF;
+              line-height: 0.44rem;
+              padding: 0;
+              text-indent: 0.03rem; }
+        section .swiper-slide .personal_store .business_con .shop_img {
+          display: flex;
+          justify-content: space-between; }
+          section .swiper-slide .personal_store .business_con .shop_img a {
+            display: block;
+            width: 0.915rem;
+            height: 1.185rem;
+            position: relative; }
+            section .swiper-slide .personal_store .business_con .shop_img a img {
+              width: 0.915rem;
+              height: 1.185rem; }
+            section .swiper-slide .personal_store .business_con .shop_img a span {
+              position: absolute;
+              bottom: 0px;
+              display: block;
+              height: 0.25rem;
+              line-height: 0.25rem;
+              color: #FFFFFF;
+              text-align: center;
+              font-size: 12px;
+              width: 100%; }
+        section .swiper-slide .personal_store .business_con .addr {
+          height: 0.44rem;
+          line-height: 0.44rem;
+          font-size: 12px;
+          color: #868686; }
+          section .swiper-slide .personal_store .business_con .addr i {
+            font-size: 12px; }
+      section .swiper-slide .personal_store .operation {
+        height: 0.44rem;
+        border-top: 1px solid #d8d8d8;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%; }
+        section .swiper-slide .personal_store .operation a {
+          display: block;
+          width: 25%;
+          height: 0.21rem;
+          line-height: 0.21rem;
+          color: #787878;
+          text-align: center;
+          box-sizing: border-box; }
+          section .swiper-slide .personal_store .operation a i {
+            font-size: 12px;
+            margin-right: 0.04rem; }
+        section .swiper-slide .personal_store .operation a + a {
+          border-left: 1px solid #e0e0e0; }
+  section .care_list .care {
+    height: 0.31rem;
+    width: 100%;
+    text-align: center;
+    line-height: 0.41rem;
+    font-size: 12px;
+    color: #888888; }
+  section .care_list .personal_store .business_con .addr {
+    height: 0.61rem;
+    line-height: 0.22rem;
+    padding: 0.075rem 0 0.095rem;
+    box-sizing: border-box; }
+  section .talk_list .personal_store .business_con .addr div {
+    display: flex;
+    justify-content: space-between; }
+    section .talk_list .personal_store .business_con .addr div p:last-child {
+      color: #fe3666; }
+  section .talk_list .personal_store .business_con .shop_img {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; }
+    section .talk_list .personal_store .business_con .shop_img a {
+      width: 33.3333333333%; }
+      section .talk_list .personal_store .business_con .shop_img a span {
+        width: 0.915rem; }
+  section .love_list {
+    height: 100%;
+    background: #ffffff url("../img/img_cannotfindthenumber.png") no-repeat center 0.32rem;
+    background-size: 1.12rem; }
+    section .love_list p {
+      font-size: 14px;
+      text-align: center;
+      color: #9b9b9b;
+      position: relative;
+      top: 1.41rem; }
+    section .love_list .btn {
+      position: relative;
+      top: 1.65rem; }
+      section .love_list .btn a {
+        display: block;
+        width: 1.1rem;
+        height: 0.34rem;
+        color: #fe3666;
+        border: 0.01rem solid #fe3666;
+        text-align: center;
+        line-height: 0.36rem;
+        font-size: 18px;
+        border-radius: 0.05rem;
+        margin: 0 auto; }
+  section .see_list {
+    width: 100%;
+    padding: 0.14rem 0.23rem 0;
+    box-sizing: border-box;
+    background: #FFFFFF; }
+    section .see_list .record {
+      position: relative;
+      padding: 0 0.2rem 0.2rem;
+      border-left: 1px solid #d7d7d7; }
+      section .see_list .record h5 {
+        height: 0.25rem;
+        color: #888888;
+        font-size: 12px;
+        position: relative; }
+        section .see_list .record h5 i {
+          position: absolute;
+          color: #fe3666;
+          font-size: 40px;
+          left: -0.41rem;
+          top: -0.13rem; }
+      section .see_list .record .shop {
+        display: flex;
+        justify-content: space-between; }
+        section .see_list .record .shop a {
+          display: block;
+          width: 50%;
+          box-sizing: border-box; }
+          section .see_list .record .shop a img {
+            width: 100%; }
+          section .see_list .record .shop a p {
+            width: 1.02rem;
+            height: 0.28rem;
+            line-height: 0.28rem;
+            color: #222222;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 14px; }
+          section .see_list .record .shop a span {
+            line-height: 0.27rem;
+            color: #fe4773;
+            font-size: 12px; }
+        section .see_list .record .shop a:nth-child(even) {
+          padding-left: 10%; }
+        section .see_list .record .shop a:nth-child(odd) {
+          padding-right: 10%; }
+
+.foot {
+  width: 100%;
+  height: 0.49rem;
+  border-top: 1px solid #a9a9a9;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: #FFFFFF; }
+  .foot a {
+    width: 25%;
+    color: #c4c4c4;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .foot a i {
+      font-size: 24px; }
+  .foot .active {
+    color: #fe3666; }
+  .foot a:hover {
+    color: #fe3666; }
+
+/*# sourceMappingURL=footprint.css.map */
